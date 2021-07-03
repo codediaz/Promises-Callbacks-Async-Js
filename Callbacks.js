@@ -1,11 +1,12 @@
-const paises = [ 'Francia', 'Spain', 'Portugal', 'Australia']
+const paises = [ 'Francia', 'Spain', 'Portugal', 'Australia'];
 
 function mostarPaises(){
-    setTimeOut(()=>{
+    setTimeout(() => {
         paises.forEach(pais => {
-            console.log(paises)
-        })
+            console.log(pais);
+        });
 
 
     },1000);
 }
+mostarPaises();
