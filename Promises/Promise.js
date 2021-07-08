@@ -11,6 +11,11 @@ const aplicarDescuento = new Promise((resolve,reject)=>{
 
 })
 
-aplicarDescuento.then(resultado =>{
-    console.log(resultado);
-})
+aplicarDescuento
+    .then(resultado => print(resultado))
+    .catch(error => console.log(error))
+
+
+function print(mensaje){
+    console.log(mensaje)
+}
