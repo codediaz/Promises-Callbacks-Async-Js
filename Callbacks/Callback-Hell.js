@@ -1,6 +1,6 @@
 const paises = [] 
 
-function nuevopais(pais,callback){
+function nuevoPais(pais,callback){
     paises.push(pais)
     console.log(`AGREGADO: ${pais}`);
     callback()
@@ -8,13 +8,14 @@ function nuevopais(pais,callback){
 }
 
 function mostrarPais(){
+    console.log(paises)
 
 }
 
 function iniciarCallBackHell(){
 
     setTimeout(()=>{
-        nuevoPais('Alemania', mostrarPais)
+        nuevoPais('Ecuador', mostrarPais)
     },3000)
 
 
